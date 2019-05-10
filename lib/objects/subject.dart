@@ -3,7 +3,6 @@ import 'package:natural_selection/animations/subject_motion.dart';
 import 'package:natural_selection/objects/scaffolds/subject_scaffold.dart';
 import 'package:natural_selection/animations/subjectEnergySourceInteraction.dart';
 import 'package:natural_selection/test_objects/test_objects.dart';
-import 'package:natural_selection/pages/home.dart';
 
 class Subject extends StatefulWidget{
   final Offset initPos;
