@@ -21,31 +21,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
 
   @override
   Widget build(BuildContext context) {  
-    return home(startMotion, animate);
-  }
-
-  animate(){
-
-    int _tms = 5000;
-
-    cont = AnimationController(
-      vsync: this,
-      duration: Duration(milliseconds: _tms),
-    );
-    ani = Tween<int>(begin: 0, end: 1).animate(cont)
-      ..addListener((){
-        
-      })
-      ..addStatusListener((status){
-          if(status == AnimationStatus.completed){
-            cont.reset();
-            cont.forward();
-            setState(() {
-              
-            });
-          }
-      });
-    cont.forward();
+    return home(startMotion);
   }
   startMotion(){
     for(int i = 0; i < dB.length; i++){                            

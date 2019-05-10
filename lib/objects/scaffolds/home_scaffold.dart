@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:natural_selection/test_objects/test_objects.dart';
 
-Widget home(Function f, Function g){
+Widget home(Function f){
   return Scaffold(
       appBar: AppBar(
         title: Text("Natural Selection"),
@@ -28,8 +28,7 @@ Widget home(Function f, Function g){
           GestureDetector(
             child: Icon(Icons.arrow_right),
             onTap: (){
-              f();  
-              g();    
+              f();      
             },
           )
         ],
